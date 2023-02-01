@@ -1,0 +1,38 @@
+for i in [{class: 'white-card', id: 'embratur', src: '../../img/EMBRATUR.svg'}, {class: 'green-card', id: 'green1'}, {class: 'white-card', id: 'danisco', src: '../../img/DANISCO.svg'}, {class: 'green-card', id: 'green2'}, {class: 'white-card', id: `buffet's`, src: `../../img/Buffet's.svg`}, {class: 'white-card', id: 'barco', src: '../../img/BARCO.svg'}]
+    if i.class == 'white-card'
+        div(class=i.class)
+            div
+                input(type="checkbox", id=i.id)
+                label(for=i.id)
+                    img.green_plus(src="../../img/icon_plus_green.svg")
+                img.logo(src=i.src)
+                p.green-p Business & Management
+                h2 Master of Business Administration (CMI)
+                p.graduate Postgraduate
+            .info
+                div
+                    img(src="../../img/icon_education.svg", alt="postgraduate")
+                    | Postgraduate
+                div
+                    img(src="../../img/icon_date.svg", alt="date")
+                    if i.id == 'barco'
+                        | January, April, July, October, November
+                    else
+                        | Every 12 weeks
+                p.price £12,650
+                button More Info
+    else
+        div(class=i.class)
+            input(type="checkbox", id=i.id)
+            label(for=i.id)
+                img.white_plus(src="../../img/icon_plus.svg", alt="plus")
+            p.paragraph MSc Data Analytics and Information Systems Management
+            div 
+                p Duration:
+                p Minimum: 18 months
+                p Maximum: 36 months
+            div 
+                p Start Dates:
+                p January, April, July, October
+            p.price-green £8,500
+            button More Info

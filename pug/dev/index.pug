@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title Тестовое Барановская
+        link(rel="stylesheet", href="../../sass/style.css")
+    body
+        .container
+            h1 Find Your Course
+            main
+                nav
+                    p.green-p
+                        img(src="../../img/icon_education_green.svg", alt="education icon")
+                        span Careers
+                        span Choose YOUR Career
+                        img(src="../../img/arrow_right.svg", alt="arrow right")
+                    include navList/navList.pug
+                    button Show all programmes
+                .cards-container
+                    .cards
+                        include cards/cards.pug
+                    button More programmes
+                        img(src="../../img/icon_refresh.svg", alt="refresh")

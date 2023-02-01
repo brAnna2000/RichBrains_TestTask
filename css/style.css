@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #3E3E3E;
+}
+
+body {
+  background-color: #F7F7F7;
+}
+@media (min-width: 900px) and (max-width: 1300px) {
+  body {
+    background-color: #F7F7F7;
+  }
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body {
+    background-color: #FFFFFF;
+  }
+}
+@media (min-width: 1300px) {
+  body .container {
+    margin: 60px 121px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1300px) {
+  body .container {
+    width: 95%;
+    margin: 60px 15px;
+  }
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container {
+    width: 330px;
+    margin: 15px auto;
+  }
+}
+body .container h1 {
+  font-size: 30px;
+  font-family: "Playfair Display";
+  font-weight: 100;
+}
+body .container main {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main {
+    margin: 16px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+body .container main nav {
+  width: 23%;
+  height: 100%;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  padding: 30px 15px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main nav {
+    width: 100%;
+    height: 52px;
+    background-color: #F1F1F1;
+    border-radius: 3px;
+    padding: 16px 19.7px 14px 27px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+}
+body .container main nav .green-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0 19px 0;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main nav .green-p {
+    padding: 0;
+    font-weight: 600;
+  }
+}
+body .container main nav .green-p img:first-of-type {
+  margin-right: 12px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main nav .green-p img:first-of-type {
+    margin-right: 10px;
+  }
+}
+body .container main nav .green-p img:last-of-type {
+  display: none;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main nav .green-p img:last-of-type {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+body .container main nav .nav-container {
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main nav .nav-container {
+    display: none;
+  }
+}
+body .container main nav .nav-container div {
+  margin: 20px 0;
+  padding: 0 11px;
+}
+body .container main nav .nav-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body .container main nav .nav-container ul {
+  display: none;
+  list-style-type: none;
+}
+body .container main nav .nav-container ul li {
+  border-radius: 3px;
+  padding: 12px 13px;
+}
+body .container main nav .nav-container ul li:hover {
+  background: #F2F2F2;
+}
+body .container main nav .nav-container ul li:active {
+  background: rgba(37, 150, 9, 0.15);
+  color: #259609;
+}
+body .container main nav .nav-container input {
+  display: none;
+}
+body .container main nav .nav-container input:checked ~ ul {
+  display: block;
+}
+body .container main nav .nav-container input:checked ~ p {
+  color: #259609;
+}
+body .container main nav .nav-container input:checked ~ p img {
+  content: url("../img/green_arrow_down.svg");
+}
+body .container main nav button {
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(37, 150, 9, 0.35);
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #259609;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main nav button {
+    display: none;
+  }
+}
+body .container main .green-p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #259609;
+  text-transform: uppercase;
+}
+body .container main .green-p span:first-of-type {
+  color: #259609;
+}
+body .container main .green-p span:last-of-type {
+  display: none;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .green-p {
+    padding: 0;
+    font-weight: 600;
+  }
+  body .container main .green-p span:first-of-type {
+    display: none;
+  }
+  body .container main .green-p span:last-of-type {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+body .container main .cards-container {
+  width: 75%;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container {
+    width: 100%;
+  }
+}
+body .container main .cards-container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+}
+@media (min-width: 900px) and (max-width: 1300px) {
+  body .container main .cards-container .cards {
+    gap: 10px;
+  }
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+}
+body .container main .cards-container .cards > div {
+  height: 405px;
+  width: 30%;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards > div {
+    height: 330px;
+    width: 100%;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    outline: 1px solid #68cfa5;
+  }
+}
+body .container main .cards-container .cards .white-card {
+  padding: 24px 30px 30px 30px;
+  background-color: #FFFFFF;
+  border-top: 6px solid #259609;
+  -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+}
+body .container main .cards-container .cards .white-card input {
+  display: none;
+}
+body .container main .cards-container .cards .white-card .graduate {
+  display: none;
+}
+body .container main .cards-container .cards .white-card .green_plus {
+  display: none;
+}
+body .container main .cards-container .cards .white-card .price {
+  display: none;
+}
+@media (min-width: 900px) and (max-width: 1300px) {
+  body .container main .cards-container .cards .white-card {
+    padding: 24px 20px 30px 20px;
+  }
+  body .container main .cards-container .cards .white-card .logo {
+    margin-bottom: 20px;
+    max-width: 100px;
+  }
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards .white-card {
+    padding: 15px 25px 20px 25px;
+    background-color: #FFFFFF;
+    border-top: 6px solid #259609;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  body .container main .cards-container .cards .white-card label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  body .container main .cards-container .cards .white-card input:checked + label .green_plus {
+    content: url("../img/icon_plus_green_tilted.svg");
+    width: 30px;
+    height: 30px;
+  }
+  body .container main .cards-container .cards .white-card input:checked body .container main .cards-container .cards .white-card, body .container main .cards-container .cards .white-card:active {
+    background-color: #F7F7F7;
+  }
+  body .container main .cards-container .cards .white-card .graduate {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 6px;
+  }
+  body .container main .cards-container .cards .white-card .price {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  body .container main .cards-container .cards .white-card .green_plus {
+    display: inline;
+  }
+}
+body .container main .cards-container .cards .white-card h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards .white-card h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+body .container main .cards-container .cards .white-card .green-p {
+  clear: both;
+  margin-bottom: 10px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards .white-card .green-p {
+    margin-bottom: 8px;
+  }
+}
+body .container main .cards-container .cards .white-card .logo {
+  float: right;
+  margin-bottom: 30px;
+}
+body .container main .cards-container .cards .white-card .info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards .white-card .info div {
+    display: none;
+  }
+}
+body .container main .cards-container .cards .white-card .info div img {
+  margin-right: 13px;
+}
+body .container main .cards-container .cards .white-card button {
+  background-color: #259609;
+  color: #FFFFFF;
+  margin-top: 22px;
+}
+body .container main .cards-container .cards .green-card {
+  position: relative;
+  background-color: #259609;
+  -webkit-box-shadow: 0px 22px 37px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 22px 37px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main .cards-container .cards .green-card {
+    display: none;
+  }
+}
+body .container main .cards-container .cards .green-card .white_plus {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+body .container main .cards-container .cards .green-card input {
+  display: none;
+}
+body .container main .cards-container .cards .green-card input:checked + label .white_plus {
+  content: url("../img/icon_plus_tilted.svg");
+}
+body .container main .cards-container .cards .green-card p {
+  color: #FFFFFF;
+  line-height: 22px;
+}
+body .container main .cards-container .cards .green-card .paragraph {
+  font-size: 16px;
+  font-weight: 600;
+  width: 78%;
+}
+body .container main .cards-container .cards .green-card div {
+  font-size: 14px;
+}
+body .container main .cards-container .cards .green-card div:first-of-type > p:first-of-type {
+  width: 100%;
+}
+body .container main .cards-container .cards .green-card div p:first-of-type {
+  font-weight: 600;
+}
+body .container main .cards-container .cards .green-card .price-green {
+  font-size: 32px;
+}
+body .container main .cards-container .cards .green-card button {
+  background-color: #FFFFFF;
+  color: #259609;
+}
+body .container main .cards-container .cards .green-card input:checked ~ button {
+  background: rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+}
+body .container main .cards-container button {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  margin-top: 26px;
+}
+body .container main > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (min-width: 360px) and (max-width: 900px) {
+  body .container main > button {
+    display: none;
+  }
+}

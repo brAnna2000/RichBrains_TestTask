@@ -1,0 +1,10 @@
+.nav-container
+    for i in ['Business & Management', 'Computing & IT', 'Fashion & Media', 'Finance & Accounting', 'Law & Criminology', 'Marketing & Communications', 'Psychology & Social Sciences']
+        div
+            label
+                input(type="checkbox")
+                p=i
+                    img(src="../../img/arrow_right.svg",alt="arrow right")
+                ul
+                    for y in ['Market Research Executive', 'Child Psychologist', 'Guidance Counsellor', 'Behaviour Analyst', 'Recreational Therapist']
+                        li=y
